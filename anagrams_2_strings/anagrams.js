@@ -5,6 +5,7 @@ rearranging the letters of another, such as cinema, formed from iceman.
 
 */
 
+/*
 function validAnagram(str1, str2) {
     //create two objects, count occurrences of each letter for each array
     //loop over each array to count the occurrences of each letter and store in objects
@@ -46,7 +47,7 @@ function validAnagram(str1, str2) {
     return true;
 
 }
-
+*/
 //console.log(validAnagram('anagram', 'nagaram'));
 
 
@@ -59,7 +60,7 @@ console.log(validAnagram('qwerty', 'qeywrt'));  //t
 console.log(validAnagram('texttwisttime', 'timetwisttext')); //t
 
 //better solution with 2 loops instead of 3
-/*
+
 function validAnagram(first, second) {
     if (first.length !== second.length) {
       return false;
@@ -88,6 +89,12 @@ function validAnagram(first, second) {
   }
   
   // {a: 0, n: 0, g: 0, r: 0, m: 0,s:1}
-  validAnagram('anagrams', 'nagaramm')
+  //validAnagram('anagrams', 'nagaramm')
 
-*/
+  console.log(validAnagram('', ''));   //t
+  console.log(validAnagram('aaz', 'zza')); //f
+  console.log(validAnagram('anagram', 'nagaram')); //t
+  console.log(validAnagram('rat', 'car')); //f
+  console.log(validAnagram('awesome', 'awesom')); //f
+  console.log(validAnagram('qwerty', 'qeywrt'));  //t
+  console.log(validAnagram('texttwisttime', 'timetwisttext')); //t
