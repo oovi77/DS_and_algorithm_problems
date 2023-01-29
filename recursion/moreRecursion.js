@@ -109,12 +109,12 @@ function fib(n) {
 }
 
 /*
-n = 6
-if (n <=2 ) its not, n = 6
-return fib(n-1) + fib(n-2)
-fib(6 - 1), =  fib(5)
-fib(5)
-fib(5) => fib(4) + fib()
+n = 5
+return fib(4) + fib(3)
+fib(4) = 3 + 2
+return fib(3) + fib(2) -> 2 + 1
+fib(3) = 2
+return fib(2) + fib(1)
 
 */
 
@@ -128,4 +128,5 @@ console.log(fib(35));
 
 // 1, 1, 2, 3, 5, 8
 // 4 -> 3
+
 
